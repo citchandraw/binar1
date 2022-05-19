@@ -20,6 +20,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
@@ -45,8 +46,8 @@
                 android:id="@+id/imageView1"
                 android:layout_width="50dp"
                 android:layout_height="60dp"
-                android:layout_gravity="center"
                 android:layout_weight="1"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <TextView
@@ -78,10 +79,10 @@
                 android:id="@+id/DoorToPort"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Door To Port"
                 android:textAlignment="center"
-                android:textSize="10dp" />
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="Door To Port" />
 
         </LinearLayout>
 
@@ -103,10 +104,10 @@
                 android:id="@+id/LCL"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="LCL"
                 android:textAlignment="center"
-                android:textSize="10dp" />
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="LCL" />
 
         </LinearLayout>
 
@@ -174,26 +175,26 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="From"
-            android:textSize="10dp" />
+            android:textSize="10dp"/>
 
         <Spinner
             android:id="@+id/spinner2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="Please select port of loading" />
+            android:autofillHints="Please select port of loading"/>
 
         <TextView
             android:id="@+id/textView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="To"
-            android:textSize="10dp" />
+            android:textSize="10dp"/>
 
         <Spinner
             android:id="@+id/spinner3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:autofillHints="Please select port of discharge" />
+            android:autofillHints="Please select port of discharge"/>
 
     </LinearLayout>
 
@@ -202,156 +203,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search"
-        app:flow_horizontalAlign="center"
+        android:outlineSpotShadowColor="@color/purple_200"
         tools:layout_editor_absoluteX="165dp"
-        tools:layout_editor_absoluteY="503dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="552dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="552dp">
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/home_fill0_wght400_grad0_opsz48"
-                tools:layout_editor_absoluteY="526dp" />
-
-            <TextView
-                android:id="@+id/Home"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Home"
-                android:textAlignment="center"
-                android:textSize="12dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="552dp">
-
-            <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/assignment_fill0_wght400_grad0_opsz48" />
-
-            <TextView
-                android:id="@+id/MyBooking"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="My Booking"
-                android:textAlignment="center"
-                android:textSize="12dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="552dp">
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/receipt_long_fill0_wght400_grad0_opsz48" />
-
-            <TextView
-                android:id="@+id/myFinance"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="My Finance"
-                android:textAlignment="center"
-                android:textSize="12dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="552dp">
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/description_fill0_wght400_grad0_opsz48" />
-
-            <TextView
-                android:id="@+id/MyDo"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="My DO"
-                android:textAlignment="center"
-                android:textSize="12dp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="552dp">
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="center"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/android_contacts_fill0_wght400_grad0_opsz48 />
-
-            <TextView
-                android:id="@+id/Account"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Account"
-                android:textAlignment="center"
-                android:textSize="12dp" />
-
-        </LinearLayout>
-
-
-    </LinearLayout>
+        tools:layout_editor_absoluteY="514dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
