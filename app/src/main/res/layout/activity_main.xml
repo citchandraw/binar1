@@ -47,7 +47,7 @@
                 android:layout_height="60dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/ic_launcher_foreground" />
+                app:srcCompat="@drawable/directions_boat_fill0_wght400_grad0_opsz48" />
 
             <TextView
                 android:id="@+id/PortToPort"
@@ -337,7 +337,7 @@
                 android:layout_height="30dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/android_contacts_fill0_wght400_grad0_opsz48 />
+                app:srcCompat="@drawable/android_contacts_fill0_wght400_grad0_opsz48" />
 
             <TextView
                 android:id="@+id/Account"
