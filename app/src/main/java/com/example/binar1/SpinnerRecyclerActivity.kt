@@ -3,11 +3,11 @@ package com.example.binar1
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import android.widget.Spinner
-import android.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class SpinnerRecyclerActivity : AppCompactActivity(){
+class SpinnerRecyclerActivity : AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_spinner_recycler)
@@ -19,7 +19,7 @@ class SpinnerRecyclerActivity : AppCompactActivity(){
 
         //item kedua, adapter berfungsi untuk menghubungkan dataset ke tampilan UI
         val adapter: ArrayAdapter<String> = ArrayAdapter<String>(
-            context = this@spinnerRecyclerActivity,
+            context = this@SpinnerRecyclerActivity,
             android.R.layout.simple_spinner_dropdown_item, dataSet
         )
 

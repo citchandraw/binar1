@@ -20,17 +20,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.022" />
 
+
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="220dp"
-        android:layout_height="231dp"
+        android:layout_width="match_parent"
+        android:layout_height="222dp"
         app:srcCompat="@drawable/ship_17074"
-        tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="-12dp" />
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="34dp" />
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="509dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal"
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="221dp">
@@ -42,18 +43,46 @@
             android:orientation="vertical">
 
             <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
                 android:layout_weight="1"
+                android:layout_gravity="center"
                 app:srcCompat="@drawable/ic_launcher_foreground" />
 
             <TextView
                 android:id="@+id/PortToPort"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Port To Port" />
+                android:text="Port To Port"
+                android:textAlignment="center"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/local_shipping_fill0_wght400_grad0_opsz48" />
+
+            <TextView
+                android:id="@+id/DoorToPort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="Door To Port" />
 
         </LinearLayout>
 
@@ -65,22 +94,73 @@
 
             <ImageView
                 android:id="@+id/imageView3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/local_shipping_fill0_wght400_grad0_opsz48" />
+                app:srcCompat="@drawable/logistics_delivery_cart_svgrepo_com" />
 
             <TextView
-                android:id="@+id/DoorToPort"
-                android:layout_width="wrap_content"
+                android:id="@+id/LCL"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
                 android:layout_weight="1"
-                android:text="Door To Port" />
+                android:textSize="10dp"
+                android:text="LCL" />
 
         </LinearLayout>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="295dp">
+
+        <TextView
+            android:id="@+id/TrackYourShipment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Track Your Shipment"
+            android:textSize="14dp"
+            tools:layout_editor_absoluteX="9dp"
+            tools:layout_editor_absoluteY="331dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_menu_search" />
+
+            <EditText
+                android:id="@+id/EnterBlNumberContainerNumberOrReceiptNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter BL Number, Container Number or Receipt Number"
+                android:textSize="12dp"
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SearchVesselSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Vessel Schedule"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="12dp"
+        tools:layout_editor_absoluteY="380dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
